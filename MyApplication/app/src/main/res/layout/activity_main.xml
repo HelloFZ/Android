@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hellofz.linearlayout.MainActivity">
+
+    <TextView
+        android:id="@+id/textlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录："
+        android:layout_marginLeft="30px"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:id="@+id/textaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textlogin"
+        android:background="#00ffff"
+        android:layout_marginLeft="20px"
+        android:hint="请输入账号      "
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/textpsaaword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="密码："
+        android:layout_alignLeft="@+id/textlogin"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:id="@+id/textmima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textaccount"
+        android:background="#00ffff"
+        android:hint="请输入密码      "
+        android:layout_alignBottom="@+id/textpsaaword"
+        android:textSize="25dp"
+
+        />
+
+    <Button
+        android:text="取消"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignRight="@+id/textmima"
+        android:layout_alignEnd="@+id/textmima"
+        />
+
+    <Button
+        android:text="登录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/button"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/textpsaaword"
+        android:layout_alignLeft="@+id/textpsaaword"
+        android:layout_alignStart="@+id/textpsaaword"
+        android:elevation="0dp" />
+
+</RelativeLayout>
